@@ -1,7 +1,5 @@
 import React from 'react';
 
-const A = () => {
-    return <div>AA</div>
-}
+const A = () => <div>AA</div>;
 
 export default A;
