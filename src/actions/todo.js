@@ -7,3 +7,12 @@ export function addTodo(text) {
 export function toggleTodo(index) {
   return { type: TOGGLE_TODO, index };
 }
+
+
+export function asyncAddTodo(text) {
+  return (dispatch) => {
+    setTimeout(() => {
+      dispatch(addTodo(text));
+    }, 1000);
+  };
+}
